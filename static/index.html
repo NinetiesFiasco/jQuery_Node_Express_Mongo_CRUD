@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+  <title>CRUD Express Mongo</title>
+  <!-- Используем jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="javascript.js"></script>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+  <!-- Логирование результатов выполнения всех операций -->
+  <table>
+    <thead>
+      <tr><th colspan="2">CRUD операции</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type='button' id='add' value='Добавить запись'/></td>
+        <td><div id='addResult'/></td>
+      </tr>
+      <tr>
+        <td><input type='button' id='count' value='Получить кол-во записей'/></td>
+        <td><div id='countResult'/></td>
+      </tr>
+      <tr>
+        <td>
+          <input type='button' id='get' value='Получить записи'/>
+          <input id='getPage' value='1'/>
+          <input id='getOffset' value='5'/>        
+        </td>
+        <td><div id='getResult'/></td>
+      </tr>
+      <tr>
+        <td>Удаления</td>
+        <td><div id='deleteResult'/></td>
+      </tr>
+      <tr>
+        <td>Обновление данных:</td>
+        <td><div id='redactResult'></div></td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- ********************************************** -->
+
+  <!-- Таблица с выводом результатов -->
+  <table class='dataTab'>
+    <thead></thead>
+    <tbody></tbody>
+    <tfoot></tfoot>
+  </table>
+  <!-- ***************************** -->
+
+  <!-- Таблица в которой редактируются данные -->
+  <table class='redactorTab'>
+    <thead>
+      <tr>
+        <th colspan="2">Редактор</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Заголовок</td>
+        <td><input id='rTitle' /></td>
+      </tr>
+      <tr>
+        <td>Количество</td>
+        <td><input id='rCount'/></td>
+      </tr>
+      <tr>
+        <td>Комментарий</td>
+        <td><input id='rComment'/></td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="2">
+          <input id="hiddenId" />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type='button' id='bSave' value='Сохранить' />
+          <input type='button' id='bCancel' value='Отменить' />
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+  <!-- ************************************** -->
+</body>

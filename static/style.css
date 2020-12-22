@@ -1,0 +1,26 @@
+.dataTab {
+  border-collapse: collapse;
+}
+.dataTab tr td,.dataTab tr th {
+  border: 1px solid black;
+}
+.page {
+  color: blue;
+  background: white;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+.page:hover{
+  background: lightblue;
+}
+.page:active{
+  background: red;
+}
+#hiddenId{
+  display: none;
+}
+.redactorTab{
+  display: none;
+}
