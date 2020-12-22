@@ -2,7 +2,7 @@
 ### using Node.js Express MongoDB jQuery
 
 ## Commands
-`yarn start` - simple run in node.js
+`yarn start` - simple run in node.js  
 `yarn debug` - run in node with inspector
 
 ### inspector guide
